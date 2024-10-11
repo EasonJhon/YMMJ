@@ -32,7 +32,7 @@ public class Launcher : MonoBehaviour
     {
         AS.Play();
         yield return new WaitForSeconds(0.2f);
-        SceneManager.LoadSceneAsync("Main");
+        SceneManager.LoadSceneAsync("Loading");
     }
 
     IEnumerator Quit()
