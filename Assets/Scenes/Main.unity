@@ -786,7 +786,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "1\u3001\u5706\u660E\u56ED\u5341\u4E8C\u751F\u8096\u517D\u9996\u94DC\u50CF______\u5386\u53F2\u4E8B\u4EF6\u4E2D\u88AB\u63A0\u593A\uFF1F"
+  m_Text: "\u5706\u660E\u56ED\u5341\u4E8C\u751F\u8096\u517D\u9996\u94DC\u50CF______\u5386\u53F2\u4E8B\u4EF6\u4E2D\u88AB\u63A0\u593A\uFF1F"
 --- !u!222 &378337758
 CanvasRenderer:
   m_ObjectHideFlags: 0
