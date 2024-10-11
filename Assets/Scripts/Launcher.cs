@@ -5,22 +5,19 @@ using System.Collections;
 
 public class Launcher : MonoBehaviour
 {
-    public Button EnterGameBtn;
-    public Button QuitGameBtn;
+    private Button m_EnterGameBtn;
+    private Button m_QuitGameBtn;
     public AudioSource AS;
+
     // Start is called before the first frame update
     void Start()
     {
-        EnterGameBtn.onClickEx = EnterGame;
-        QuitGameBtn.onClickEx = QuitGame;
+        m_EnterGameBtn = transform.Find("EnterGameBtn").GetComponent<Button>();
+        m_QuitGameBtn = transform.Find("QuitGameBtn").GetComponent<Button>(); 
+        m_EnterGameBtn.onClick.AddListener(EnterGame);
+        m_QuitGameBtn.onClick.AddListener(QuitGame);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
     public void EnterGame()
     {
         StartCoroutine("LoadScene");
